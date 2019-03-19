@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Methods and properties </title>
+</head>
+<body>
+    <h1>Methods and Properties for Arrays</h1>
+    <script>
+        // Aqui se imprime el numero de elementos que hay en el array
+        var friends = ["Samuel", "Stiven", "German", "Deyby"];
+        document.write("Tienes " + friends.length + " amigos <br />");
+        
+        // Agrega el nombre al final del array
+        friends[friends.length] = "Antonio";
+        friends[friends.length] = "Fabio";
+        // Agrega todos los nombres en el array
+        friends.push("Ana", "Antonella", "Camilo");
+        // Elimina el ultimo nombre del array
+        //friends.pop();
+        var friends2 = ["Lorenzo", "Ivan", "Mayte", "Jesus"];
+        var friends3 = friends.concat(friends2);
+        //document.write(friends3);
+        // Separa los datos del array con los caracteres especificados en el join ( : )
+        document.write(friends3.join(" : "));
+        //document.write(friends2.join(" | "));
+        //Ordena el array alfabeticamente ascendentemente
+        var order = friends3.sort()
+        document.write(order);
+        // Ordena el array alafabeticamente descendente
+        var order2 = friends3.reverse();
+        document.write(order2);
+    </script>
+</body>
+</html>

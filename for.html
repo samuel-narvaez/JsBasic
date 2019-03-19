@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciclo For</title>
+</head>
+<body>
+    <h1>Multiplication table</h1>
+    <!--
+    <script>
+        for (i = 1; i <= 10; i++){
+            document.write("Yes " + i + "<br>");
+        }
+    </script>
+    <script>
+        var numberUsers = 50;
+        for(i = 1; i <= numberUsers; i++){
+            document.write(i + "<br>");
+        }
+    </script>
+    <script>
+       var days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingos"];
+       for (i = 0; i < days.length; i++){
+           document.write(days[i]+ "<br>");
+       }
+    </script>
+    -->
+
+    <script>
+        var number = prompt("Enter a number and show the multiplication table ");
+        document.write("Your multiplication table is: "+ "<br>");
+        for (i = 1; i <= 10; i++){
+            document.write(number +  "*" + i + " = ");
+            document.write(number * i + "<br>");
+        }
+    </script>
+</body>
+</html>
