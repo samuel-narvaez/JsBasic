@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <form name="formulario" id="form">
+            <table>
+                <tr>
+                    <td>
+                        <label>Nombres: </label>
+                    </td>
+                    <td>
+                        <input id="nombres" type="text" placeholder="Nombres" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Codigo</label>
+                    </td>
+                    <td>
+                        <input id="codigo" type="number" placeholder="12345678" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Fecha de Entrega</label>
+                    </td>
+                    <td>
+                        <input id="fecha" type="date" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tipos de Libros</label>
+                    </td>
+                    <td>
+                        <select name="select" id="tipo">
+                            <option value="Seleccione">Seleccione</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Novelas">Novelas</option>
+                            <option value="Ciencia">Ciencia</option>
+                            <option value="CienciaFiccion">CienciaFiccion</option>
+                            <option value="Cocina">Cocina</option>
+                        </select>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <label>Acepta Terminos y Condiciones</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="terminos" id="terminos" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center">
+                        <button id="boton" type="button" onclick="editar()">Editar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+   
+
+<div align="center">
+    <table> 
+        <tr>
+            <td>
+                <input id="ingresartexto" type="text" />
+            </td>
+        <td>
+            <select id="selectBuscar">
+                <option value="Seleccione">Seleccione</option>
+                <option value="nom">Nombres</option>
+                <option value="cod">Codigo</option>
+                <option value="fecha">Fecha</option>
+                <option value="tipo">Libros</option>
+            </select>
+        </td>
+
+        <td>
+            <button id="btnbuscar" type="submit" onclick="mostra()">Buscar</button>
+        </td>   
+        </tr>   
+    </table>    
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
